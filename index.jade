@@ -1,0 +1,16 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body.index
+    +auxmenu
+    .container
+      .col5(data-sr="wait 0.5s").logo
+        .svg(data="site/img/joy.svg").joy.w100
+    
+    .container
+      nav.mainNav: +menu('index', menu, 'horizontal')
+
+    +scripts

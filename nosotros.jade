@@ -1,0 +1,75 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left") ¿Por qué JOY?
+        p(data-sr="enter left") Los avances tecnológicos no se detienen y por eso dentro de JOY nos comprometemos con la tecnología para llevar a su marca a un nuevo nivel, innovando con publicidad en centros comerciales y puntos de venta, con el impacto visual de la tecnología 3d a través de nuestro producto holocube, innovando en el área de atl con vallas digitales, audiospotlight, interactive surface, carteleras digitales y proyección monumental, además de media cancha especializándose en el tema del futbol.
+      .col7
+        .mainVideo(data-sr="enter right")
+          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+            .svg(data="site/img/playbtn.svg")
+    
+    .container.secondContent
+      .col5
+        .secVideo(data-sr="enter left")
+          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+            .svg(data="site/img/playbtn.svg")
+      .col5.push1
+        .slider.one.slideVideos(data-sr="enter right")
+          - for (i=0; i<3; i++)
+            div
+              .container
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+              .container
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                  
+    footer
+      .container
+        .col3
+          a(href="tel:47551096", data-sr)
+            div.fa.fa-phone
+            p 4755 1096
+        .col3
+          a(href="mailto:@joycomunicacion.com", data-sr)
+            div.fa.fa-envelope
+            p @joycomunicacion.com
+        .col3
+          a(href="#", data-sr)
+            div.fa.fa-newspaper-o
+            p Mantente informado
+        .col3
+          a(href="#", data-sr)
+            div.fa.fa-lock
+            p Aviso de privacidad
+    #footerEnd
+      .container
+        .col10
+          nav: +menu('index', menu, 'horizontal')
+        .col2.socials
+          a(href="#"): .fa.fa-facebook
+          a(href="#"): .fa.fa-youtube
+            
+    +scripts
