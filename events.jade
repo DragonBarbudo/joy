@@ -1,0 +1,57 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('events', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left") Events
+        p(data-sr="enter left") El equipo de Joy Events se enfoca en el desarrollo, gestión y producción de eventos de marketing.
+        p(data-sr="enter left") Ofrecemos experiencias de marca innovadoras y memorables con impacto deslumbrante. Somos reconocidos por un diseño único y creativo, con estrategia perspicaz, tecnologías innovadoras y ejecución de eventos impresionantes.
+        h3 Servicios
+        ul
+          li Diseño y estrategia.
+          li Producción de soluciones creativas Ejecución y manejo de eventos.
+          li BTL, experience marketing y activaciones.
+      .col7
+        .mainVideo(data-sr="enter right")
+          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+            .svg(data="site/img/playbtn.svg")
+    
+    .container.secondContent
+      .col5
+        .secVideo(data-sr="enter left")
+          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+            .svg(data="site/img/playbtn.svg")
+      .col5.push1
+        .slider.one.slideVideos(data-sr="enter right")
+          - for (i=0; i<3; i++)
+            div
+              .container
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+              .container
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                  
+    +footer
+            
+    +scripts

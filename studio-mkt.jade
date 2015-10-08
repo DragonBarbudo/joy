@@ -1,0 +1,40 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('events', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left") Studio Marketing
+    .container.w100.studio
+      .col4
+        a(href="mkt-web.html")#mkt-web: span MKT Digital y Web UX
+      .col8
+        .container
+          .col4: a(href="mkt-diseno.html")#mkt-diseno: span Diseño
+          .col4: a(href="mkt-branding.html")#mkt-branding: span Branding e Identidad
+          .col4: a(href="mkt-pr.html")#mkt-pr: span PR y Patrocinios
+        .container
+          .col6: a(href="mkt-publicidad.html")#mkt-publicidad: span Campañas de Publicidad
+          .col6: a(href="mkt-estrategia.html")#mkt-estrategia: span Estrategia y Consultoría
+    
+    +sliderbg('#mkt-web', 'site/img/mkt-webux.jpg')
+    +sliderbg('#mkt-diseno', 'site/img/mkt-diseno.jpg')
+    +sliderbg('#mkt-branding', 'site/img/mkt-branding.jpg')
+    +sliderbg('#mkt-pr', 'site/img/mkt-pr.jpg')
+    +sliderbg('#mkt-publicidad', 'site/img/mkt-publicidad.jpg')
+    +sliderbg('#mkt-estrategia', 'site/img/mkt-estrategia.jpg')
+    
+    +footer
+            
+    +scripts

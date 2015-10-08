@@ -1,0 +1,42 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        p
+          | | 
+          a(href="mkt-web.html", data-sr="enter left wait 0.1s") Marketing Digital
+          |  | 
+        h2(data-sr="enter left").low Web UX
+        
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-webux.jpg')
+
+    
+    .container.mktweb
+      .col10.push1
+        h3 Nuestros desarrollos generan "Engagement"
+        p(data-sr) Desarrollamos sitios Web siguiendo un concepto llamado UX (User eXperince), donde la creatividad y la estrategia convergen de para brindar una excelente en el logro de objetivos.
+        p(data-sr) Con nuestras soluciones optimizadas logramos generar una destacada presencia Web, que te permitirá tener un pie delante de tus competidores, impulsando las ventas de tus productos y/o servicios.
+        h4 Servicios
+        ul
+          li Desarrollo de sitios Web UX
+          li Desarrollo de sitios Web Responsivos, adaptables a dispositivos móviles Micrositios Promocionales
+          li Tienda en línea “E-commerce”
+          li Optimización de Páginas de conversión “Landing Pages”      
+    +footer
+            
+    +scripts

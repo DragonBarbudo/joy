@@ -73,22 +73,22 @@ body{
   margin-top: 40px;
   ul{
     li{
-      .col(12/5) !important;
       a{
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         background: rgba(255,255,255,0.1);
         color:@w;
         text-align: center;
         .border-radius(50%);
         .fontA;
         text-transform: uppercase;
-        line-height: 6.3em;
         .box-sizing(border-box);
         border:1px solid rgba(255,255,255,0.5);
         text-shadow: 0 0 5px @b;
         .transition(800ms);
+        font-size: 0.9em;
+        padding-top: 50px;
         &:hover{
           background: rgba(0,0,0,0.5);
           border:1px solid @main;
@@ -96,6 +96,9 @@ body{
           .transition(300ms);
         }
       }
+    &:nth-child(4) a{
+      padding-top: 40px;
+    }
     }
   }
 }
@@ -144,18 +147,58 @@ body{
 h1, h2, h3, h4{.fontA;}
 .centralContent{
   margin-top: 40px;
-  h2{
+  h2, h3{
     font-size: 2em;
     border-bottom: 2px solid @b;
     text-transform: uppercase;
     padding: 20px 0;
+    &.low{
+      border-bottom: none;
+      border-top: 2px solid @b;
+      margin-top: 20px;
+      font-size: 3em;
+    }
+  }
+  h3{
+    border-bottom: 1px solid @g;
+    font-size: 1.4em;
+    padding: 5px 0;
   }
   p{
     margin: 30px 0;
     font-size: 0.9em;
     text-align: justify;
   }
+  a{
+    color:@b;
+    text-decoration: none;
+    &:hover{
+      color:@main;
+    }
+  }
+  ul{
+    font-size: 0.9em;
+    margin: 5px;
+    list-style-type: square;
+    list-style-position: inside;
+    li{
+      margin: 5px;
+    }
+  }
 
+  .mainImage{
+    height: 280px;
+    background: @b;
+    &:before{
+      content:"";
+      background: url(../img/leftDiag.svg);
+      height:100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+    }
+  }
   .mainVideo{
     a{
       display: block;
@@ -286,7 +329,6 @@ footer{
   nav{
     ul{
       li{
-        .col(12/5);
       }
     }
   }
@@ -302,6 +344,88 @@ footer{
       &:hover{
         background: @main;
       }
+    }
+  }
+}
+
+
+.studio{
+  margin: 10px 0 40px 0;
+  a{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    &#mkt-web{ height: 408px;}
+    &#mkt-diseno, &#mkt-branding, &#mkt-pr{ height: 200px;}
+    &#mkt-publicidad, &#mkt-estrategia{ height: 200px; margin-top: 8px;}
+    span{
+      display: block;
+      text-align: right;
+      width: 40%;
+      color:@w;
+      font-size: 1.4em;
+      text-shadow: 1px 1px 4px fade(@b, 80%);
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+    img{.opacity(1);.transition(500ms);}
+    &:hover{
+      span{
+        width: 90%;
+        font-size: 2em;
+
+      }
+      .backstretch{background: @b;}
+      img{.opacity(0.4); .transition(300ms);}
+    }
+  }
+}
+
+
+.mktweb{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  .icon{
+    width: 100px;
+    margin: 0 auto;
+    i{
+      display: block;
+      width: 100px; height: 100px;
+      background: #fff;
+      color:@main/1.4;
+      .border-radius(50%);
+      font-size: 3em;
+      padding-top: 25px;
+      .box-sizing(border-box);
+    }
+    p{
+      color:@main/1.4;
+      font-size: 1.4em;
+      text-align: center;
+      margin: 5px 0;
+    }
+  }
+  h3{
+    margin: 20px 0;
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: normal;
+  }
+  p{
+    margin: 30px 0;
+    font-size: 0.9em;
+    text-align: left;
+  }
+  ul{
+    font-size: 0.9em;
+    margin: 5px;
+    list-style-type: square;
+    list-style-position: inside;
+    text-align: left;
+    li{
+      margin: 5px;
     }
   }
 }

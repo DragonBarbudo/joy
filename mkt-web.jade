@@ -1,0 +1,46 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left") MKT Digital y Web UX
+        p(data-sr="enter left") La sociedad moderna en el mundo se enfrenta constantemente a nuevas tecnologías y medios que fomentan nuevas formas de comunicación entre las marcas y empresas con su público objetivo.
+        p(data-sr="enter left") De ahí la importancia de comprender al usuario y desarrollar su experiencia de principio a fín. Una buena UX genera clientes fieles y felices que nos permiten diferenciar nuestra marca, productos y organización.
+        p
+          | | 
+          a(href="mkt-web-ux.html", data-sr="enter left wait 0.1s") Web UX
+          |  | 
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-webux.jpg')
+
+    
+    .container.mktweb
+      .col3: .icon
+          i.fa.fa-laptop
+          p Web UX
+      .col3: .icon
+          i.fa.fa-mobile
+          p Mobile
+      .col3: .icon
+          i.fa.fa-cogs
+          p SEO
+      .col3: .icon
+          i.fa.fa-comment
+          p Social
+                  
+    +footer
+            
+    +scripts

@@ -1,0 +1,36 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left").low Estrategia y Consultoría
+        
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-pr.jpg')
+
+    
+    .container.mktweb
+      .col10.push1
+        h3 La identidad corporativa es el alma de una empresa o de una marca y proyecta la esencia.
+        p(data-sr) En nuestra historia, hemos diseñado, re-diseñado y actualizado numerosos logotipos e identidades corporativas para pequeñas, medianas y grandes empresas por igual.
+
+        h4 Servicios
+        ul
+          li Planificación estratégica de la imagen Esquema de Diseño
+          
+    +footer
+            
+    +scripts

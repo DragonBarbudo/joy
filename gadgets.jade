@@ -1,0 +1,60 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('events', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left") Gadgets
+        p(data-sr="enter left") La infraestructura y equipo de Joy Gadgets son la columna vertebral de nuestros servicios integrados para eventos y marketing.
+        p(data-sr="enter left") Nuestro equipo ingenieros han creado aplicaciones únicas para llevar al máximo las tecnologías, logrando en los últimos años implementar eventos exclusivos para marcas globales, medianas y pequeñas empresas con gran éxito.
+
+        h3 Infraestructura
+        ul
+          li Audio, Video e iluminación
+          li Pantallas de LED
+          li Video mapping y watch out
+          li Diseño de escenarios y display Estructuras y Domos de gran desempeño Equipo y mobiliario
+          li Socios estratégicos que aumentan y mejoran nuestras competencias base
+      .col7
+        .mainVideo(data-sr="enter right")
+          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+            .svg(data="site/img/playbtn.svg")
+    
+    .container.secondContent
+      .col5
+        .secVideo(data-sr="enter left")
+          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+            .svg(data="site/img/playbtn.svg")
+      .col5.push1
+        .slider.one.slideVideos(data-sr="enter right")
+          - for (i=0; i<3; i++)
+            div
+              .container
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+              .container
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                .col6
+                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
+                    .svg(data="site/img/playbtn.svg")
+                  
+    +footer
+            
+    +scripts

@@ -1,0 +1,38 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left").low Diseño
+        
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-diseno.jpg')
+
+    
+    .container.mktweb
+      .col10.push1
+        h3 El trabajo desarrollado por el equipo del departamento de Diseño es de nuestros servicios que se han fortalecido a lo largo de nuestra historia.
+        p(data-sr) El equipo de Joy Design cuenta con diseñadores de primer nivel y excelentes directores de arte, lo que permite desarrollar proyectos de diseño con la comunicación del mensaje deseado, de una manera clara y visualmente atractiva.
+
+        h4 Servicios
+        ul
+          li Diseño Gráfico
+          li Diseño publicitario
+          li Diseño estructural (empaques y materiales POP) Diseño Web
+          li Diseño integral     
+    +footer
+            
+    +scripts

@@ -30,11 +30,12 @@ include ../dw/dw.jade
 
 //- MENU
 - var menu = [] //- menu.push('PageName', 'Slug')
-- menu.push(['Nosotros', 'nosotros'])
-- menu.push(['Media', 'media'])
+- menu.push(['About Joy', 'about-joy'])
 - menu.push(['Events', 'events'])
-- menu.push(['Clientes', 'clientes'])
-- menu.push(['Contacto', 'contacto'])
+- menu.push(['Gadgets', 'gadgets'])
+- menu.push(['Studio Marketing', 'studio-mkt'])
+- menu.push(['Clients', 'clients'])
+- menu.push(['Contact', 'contact'])
 
 
 
@@ -57,3 +58,30 @@ mixin auxmenu
       .svg(data="site/img/icon_share.svg")
       div.txt Comparte
     
+    
+mixin footer
+  footer
+    .container
+      .col3
+        a(href="tel:47551096")
+          div.fa.fa-phone
+          p 4755 1096
+      .col3
+        a(href="mailto:@joycomunicacion.com")
+          div.fa.fa-envelope
+          p @joycomunicacion.com
+      .col3
+        a(href="#")
+          div.fa.fa-newspaper-o
+          p Mantente informado
+      .col3
+        a(href="#")
+          div.fa.fa-lock
+          p Aviso de privacidad
+  #footerEnd
+    .container
+      .col10
+        nav: +menu('index', menu, 'horizontal')
+      .col2.socials
+        a(href="#"): .fa.fa-facebook
+        a(href="#"): .fa.fa-youtube
