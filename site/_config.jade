@@ -151,3 +151,8 @@ mixin mktnav
     .col3: a(href="mkt-creative.html", data-sr="wait .14s").icon
         i.fa.fa-lightbulb-o
         p Creative Content
+
+
+mixin video(key)
+  a(href="https://www.youtube.com/watch?v=#{key}", style="background-image:url(http://img.youtube.com/vi/#{key}/0.jpg)").box
+    .svg(data="site/img/playbtn.svg")
