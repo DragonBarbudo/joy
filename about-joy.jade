@@ -30,32 +30,22 @@ include site/_config.jade
           a(href="contact.html", data-sr="enter left wait 0.9s") Contact
       .col7
         .mainVideo(data-sr="enter right")
-          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
-            .svg(data="site/img/playbtn.svg")
+          +video('BG1N6El12Po')
     
     .container.secondContent
       .col5
         .secVideo(data-sr="enter left")
-          a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
-            .svg(data="site/img/playbtn.svg")
+          +video('IKP_zB773GA')
       .col5.push1
         .slider.one.slideVideos(data-sr="enter right")
           - for (i=0; i<3; i++)
             div
               .container
-                .col6
-                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
-                    .svg(data="site/img/playbtn.svg")
-                .col6
-                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
-                    .svg(data="site/img/playbtn.svg")
+                .col6: +video('FjqFSTlOO-s')
+                .col6: +video('9hUGMhv4-UQ')
               .container
-                .col6
-                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
-                    .svg(data="site/img/playbtn.svg")
-                .col6
-                  a(href="https://www.youtube.com/watch?v=05RC1U1dtU0", style="background-image:url(http://img.youtube.com/vi/05RC1U1dtU0/0.jpg)").box
-                    .svg(data="site/img/playbtn.svg")
+                .col6: +video('PY8WpJ10nEo')
+                .col6: +video('AF92UZlUiPY')
                   
     +footer
             
