@@ -1,0 +1,42 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left").low Mobile
+        
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-mobile.jpg')
+
+    
+    .container.mktTxt
+      .col10.push1
+        h3 Te hacemos llegar a la “diversidad” de usuarios móviles donde se encuentren
+        p(data-sr) Con nuestras soluciones móviles hacemos vivir experiencias a todo tipo de usuarios, visualizando las situaciones y/o etapas del ciclo de compra en que se encuentren.
+        p(data-sr) La seguridad que brinda a la vida de las personas, el estar conectados en todo momento evoluciona de manera exponencial, lo cuál nos abre una gran ventana para generar negocio a través de la explotación de la movilidad en cualquier actividad humana, como lo es la comunicación, el ocio y el entretenimiento, el transporte, la alimentación, la seguridad, salud, etc...
+        h4 Soluciones
+        ul
+          li Aplicaciones personalizadas iOS
+          li Aplicaciones personalizadas Andriod
+          li Aplicaciones en renta iOS
+          li Aplicaciones en renta Andriod
+          li Aplicaciones Web
+          li Desarrollo de videojuegos
+          li Plataformas interactivas    
+        a(href="contacto.html").btn.empieza Empieza ahora
+    +footer
+            
+    +scripts

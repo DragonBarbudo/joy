@@ -1,0 +1,41 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left").low Search <br><small>(SEM)</small>
+        
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-search.jpg')
+
+    
+    .container.mktTxt
+      .col10.push1
+        h3 La “tasa de conversión” nuestra aliada en campañas de búsqueda pagadas
+        p(data-sr) Los servicios de SEM (pago por clic o PPC) a diferencia del SEO, se pagan campañas de palabras clave con miras a aumentar vi- sitantes únicos en el sitio web destino. Tomamos en cuenta las variables múltiples tanto internas como externas que optimicen los resultados en la conversión de “leads” (prospectos).
+        h4 Soluciones
+        p Incluye:
+        ul
+          li Análisis de situación actual
+          li Análisis de la competencia
+          li Definición de objetivos
+          li Análisis de palabras clave
+          li Generación y optimización de campañas y anuncios
+          li Estadísticas y reportes (Google Analitycs)
+        a(href="contacto.html").btn.empieza Empieza ahora
+    +footer
+            
+    +scripts

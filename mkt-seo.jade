@@ -1,0 +1,43 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left").low SEO <br><small>(Search engine Optimization)</small>
+        
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/mkt-seo.jpg')
+
+    
+    .container.mktTxt
+      .col10.push1
+        h3 Damos lugar a las marcas en posiciones privilegiadas para que todos las conozcan
+
+        p(data-sr) Una practica recurrente de los consumidores en el momento de informarse sobre algún producto y/o servicio es realizar búsquedas en los principales motores Google, Yahoo, bing, Ask, etc, por lo cuál, se vuelve de vital importancia aparecer en la primera página y en los primeros resultados de palabras claves de manera orgánica.
+        h4 Soluciones
+        p Incluye: 
+        ul
+          li Análisis de situación actual
+          li Análisis de la competencia
+          li Definición de objetivos
+          li Investigación y definición de palabras clave
+          li Auditorías de contenido
+          li Optimización de páginas
+          li Estadísticas y reportes   
+        a(href="contacto.html").btn.empieza Empieza ahora
+    +footer
+            
+    +scripts

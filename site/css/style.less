@@ -16,10 +16,10 @@
 
 /* ################################ CLASSES */
 .btn{
-  font-size: 16px;
+  font-size: 1.8em;;
   display: inline-block;
-  background: @w/1.05;
-  color:@g/1.4;
+  background: @main/1.3;
+  color:@w;
   border: none;
   padding: 8px 15px;
   text-decoration: none;
@@ -150,13 +150,12 @@ h1, h2, h3, h4{.fontA;}
   h2, h3{
     font-size: 2em;
     border-bottom: 2px solid @b;
-    text-transform: uppercase;
     padding: 20px 0;
     &.low{
       border-bottom: none;
       border-top: 2px solid @b;
       margin-top: 20px;
-      font-size: 3em;
+      font-size: 2.6em;
     }
   }
   h3{
@@ -382,12 +381,17 @@ footer{
   }
 }
 
+small{
+  font-size: 0.6em;
+}
 
-.mktweb{
+.mktTxt{
   text-align: center;
   margin-top: 10px;
   margin-bottom: 40px;
-  .icon{
+  a.icon{
+    display: block;
+    text-decoration: none;
     width: 100px;
     margin: 0 auto;
     i{
@@ -406,6 +410,12 @@ footer{
       text-align: center;
       margin: 5px 0;
     }
+    &:hover{
+      i{
+        background:@main;
+        color:@b;
+      }
+    }
   }
   h3{
     margin: 20px 0;
@@ -413,10 +423,17 @@ footer{
     text-align: center;
     font-weight: normal;
   }
+  h4{
+    font-size: 2em;
+  }
+  small{
+    font-size: 0.8em;
+  }
   p{
     margin: 30px 0;
     font-size: 0.9em;
     text-align: left;
+    &.center{text-align: center;}
   }
   ul{
     font-size: 0.9em;
@@ -427,5 +444,9 @@ footer{
     li{
       margin: 5px;
     }
+  }
+  .empieza{
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }

@@ -233,14 +233,25 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/mkt-branding.html": {
+	"\/mkt-analytics.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mkt-branding.html",
+		"inputAbbreviatedPath": "\/mkt-analytics.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-analytics.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-analytics.jade",
+		"outputAbbreviatedPath": "\/mkt-analytics.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/mkt-branding.jade": {
 		"compileDebug": 1,
@@ -253,14 +264,45 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/mkt-diseno.html": {
+	"\/mkt-creative.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mkt-diseno.html",
+		"inputAbbreviatedPath": "\/mkt-creative.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-creative.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-creative.jade",
+		"outputAbbreviatedPath": "\/mkt-creative.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/mkt-digital.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-digital.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-digital.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-digital.jade",
+		"outputAbbreviatedPath": "\/mkt-digital.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/mkt-diseno.jade": {
 		"compileDebug": 1,
@@ -273,15 +315,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/mkt-estrategia.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mkt-estrategia.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/mkt-estrategia.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -293,14 +326,45 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/mkt-pr.html": {
+	"\/mkt-media.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mkt-pr.html",
+		"inputAbbreviatedPath": "\/mkt-media.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-media.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-media.jade",
+		"outputAbbreviatedPath": "\/mkt-media.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/mkt-mobile.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-mobile.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-mobile.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-mobile.jade",
+		"outputAbbreviatedPath": "\/mkt-mobile.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/mkt-pr.jade": {
 		"compileDebug": 1,
@@ -313,15 +377,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/mkt-publicidad.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mkt-publicidad.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/mkt-publicidad.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -329,6 +384,66 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/mkt-publicidad.jade",
 		"outputAbbreviatedPath": "\/mkt-publicidad.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/mkt-search.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-search.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-search.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-search.jade",
+		"outputAbbreviatedPath": "\/mkt-search.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/mkt-seo.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-seo.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-seo.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-seo.jade",
+		"outputAbbreviatedPath": "\/mkt-seo.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
+		},
+	"\/mkt-social.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-social.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/mkt-social.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-social.jade",
+		"outputAbbreviatedPath": "\/mkt-social.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -424,6 +539,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/site\/img\/mkt-analytics.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55831,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-analytics.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-analytics.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/img\/mkt-branding.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -431,6 +557,28 @@
 		"initialSize": 205016,
 		"inputAbbreviatedPath": "\/site\/img\/mkt-branding.jpg",
 		"outputAbbreviatedPath": "\/site\/img\/mkt-branding.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/mkt-creative.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113615,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-creative.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-creative.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/mkt-digital.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124284,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-digital.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-digital.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -457,6 +605,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/site\/img\/mkt-media.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123087,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-media.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-media.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/mkt-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 74041,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-mobile.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/img\/mkt-pr.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -479,13 +649,46 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/site\/img\/mkt-webux.jpg": {
+	"\/site\/img\/mkt-search.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 124284,
-		"inputAbbreviatedPath": "\/site\/img\/mkt-webux.jpg",
-		"outputAbbreviatedPath": "\/site\/img\/mkt-webux.jpg",
+		"initialSize": 144715,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-search.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-search.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/mkt-seo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99882,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-seo.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-seo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/mkt-social.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 97671,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-social.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-social.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/img\/mkt-web.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71879,
+		"inputAbbreviatedPath": "\/site\/img\/mkt-web.jpg",
+		"outputAbbreviatedPath": "\/site\/img\/mkt-web.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
