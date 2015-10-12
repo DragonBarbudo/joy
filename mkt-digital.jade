@@ -23,32 +23,7 @@ include site/_config.jade
         +sliderbg('.mainImage', 'site/img/mkt-digital.jpg')
 
     
-    .container.mktTxt
-      .col3: a(href="mkt-web-ux.html").icon
-          i.fa.fa-laptop
-          p Web UX
-      .col3: a(href="mkt-mobile.html", target="_blank").icon
-          i.fa.fa-mobile
-          p Mobile
-      .col3: a(href="mkt-seo.html").icon
-          i.fa.fa-cogs
-          p SEO
-      .col3: a(href="mkt-social.html").icon
-          i.fa.fa-comment
-          p Social
-    .container.mktTxt
-      .col3: a(href="mkt-search.html").icon
-          i.fa.fa-search
-          p Search
-      .col3: a(href="mkt-media.html", target="_blank").icon
-          i.fa.fa-film
-          p Media
-      .col3: a(href="mkt-analytics.html").icon
-          i.fa.fa-bar-chart
-          p Marketing Analytics
-      .col3: a(href="mkt-creative.html").icon
-          i.fa.fa-lightbulb-o
-          p Creative Content
+    +mktnav
                   
     +footer
             

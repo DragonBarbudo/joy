@@ -808,14 +808,14 @@ form.simple textarea {
 /* ################################ COLORS */
 /* ################################ FONTS */
 .font {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 .fontA {
   font-family: 'Exo', sans-serif;
 }
 /* ################################ CLASSES */
 .btn {
-  font-size: 1.8em;
+  font-size: 1em;
   display: inline-block;
   background: #23c4c3;
   color: #e7e7e7;
@@ -856,7 +856,7 @@ form.simple textarea {
 }
 /* ################################ GENERAL */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   background: #e7e7e7;
 }
 .index {
@@ -882,7 +882,7 @@ body {
   fill: #e7e7e7;
 }
 .index .logo {
-  margin-top: 30%;
+  margin-top: 14%;
 }
 .logo {
   margin-top: 10px;
@@ -894,10 +894,17 @@ body {
 .joy * {
   fill: #272a32;
 }
-.mainNav {
+.mainNav,
+.fullNav {
   margin-top: 40px;
 }
-.mainNav ul li a {
+.mainNav ul li,
+.fullNav ul li {
+  position: relative;
+  text-align: center;
+}
+.mainNav ul li a,
+.fullNav ul li a {
   display: block;
   width: 120px;
   height: 120px;
@@ -924,8 +931,10 @@ body {
   transition: all 800ms ease-out;
   font-size: 0.9em;
   padding-top: 50px;
+  margin: 0 auto;
 }
-.mainNav ul li a:hover {
+.mainNav ul li a:hover,
+.fullNav ul li a:hover {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid #2dfffe;
   color: #2dfffe;
@@ -934,8 +943,82 @@ body {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
-.mainNav ul li:nth-child(4) a {
+.mainNav ul li:nth-child(4) a,
+.fullNav ul li:nth-child(4) a {
   padding-top: 40px;
+}
+.mainNav ul li ul.listSub,
+.fullNav ul li ul.listSub {
+  position: absolute;
+  bottom: 120px;
+}
+.mainNav ul li ul.listSub li,
+.fullNav ul li ul.listSub li {
+  width: 100%;
+}
+.mainNav ul li ul.listSub li a,
+.fullNav ul li ul.listSub li a {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border: none;
+  padding: 5px 0;
+}
+.showmenu,
+.showshare {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: -200%;
+  bottom: 0;
+  margin: 0;
+  z-index: 10;
+  background: rgba(39, 42, 50, 0.95);
+}
+.showmenu .logo,
+.showshare .logo {
+  margin-top: 50px;
+}
+.showmenu .joy *,
+.showshare .joy * {
+  fill: #e7e7e7;
+}
+.showmenu .close,
+.showshare .close {
+  position: absolute;
+  font-size: 2em;
+  color: #e7e7e7;
+  right: 20px;
+  top: 20px;
+}
+.showmenu .close:hover,
+.showshare .close:hover {
+  color: #2dfffe;
+  cursor: pointer;
+}
+.showshare {
+  text-align: center;
+}
+.showshare a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #e7e7e7;
+  color: #272a32;
+  line-height: 2.2em;
+  margin: 0 10px;
+  font-size: 3em;
+  margin: 80px auto;
+}
+.showshare a:hover {
+  background: #2dfffe;
 }
 .auxmenu {
   position: absolute;
@@ -1181,10 +1264,6 @@ footer {
   font-family: 'Exo', sans-serif;
   text-align: center;
 }
-footer .fa {
-  font-size: 3em;
-  padding: 10px 0;
-}
 footer p {
   padding: 10px 0;
 }
@@ -1194,6 +1273,49 @@ footer a {
 }
 footer a:hover {
   color: #2dfffe;
+}
+footer .col3 {
+  display: block !important;
+  float: left !important;
+  width: 18.751325% !important;
+  margin: 0 1.041% !important;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  footer .col3 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer .col3 {
+    width: 97.91796%;
+  }
+}
+footer .col3 .fa {
+  font-size: 3em;
+  padding: 10px 0;
+}
+footer .socials {
+  text-align: center;
+}
+footer .socials a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #e7e7e7;
+  color: #272a32;
+  line-height: 2.2em;
+  margin: 0 10px;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+footer .socials a:hover {
+  background: #2dfffe;
 }
 #footerEnd {
   background: #666668;
@@ -1209,23 +1331,24 @@ footer a:hover {
 #footerEnd a:hover {
   color: #2dfffe;
 }
-#footerEnd .socials a {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #e7e7e7;
-  color: #666668;
-  line-height: 1.6em;
-  margin: 0 10px;
+#footerEnd nav ul li {
+  display: block !important;
+  float: left !important;
+  width: 12.20370857% !important;
+  margin: 0 1.041% !important;
 }
-#footerEnd .socials a:hover {
-  background: #2dfffe;
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  #footerEnd nav ul li {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #footerEnd nav ul li {
+    width: 97.91796%;
+  }
+}
+#footerEnd nav ul li .listSub {
+  display: none;
 }
 .studio {
   margin: 10px 0 40px 0;
@@ -1295,7 +1418,7 @@ small {
 }
 .mktTxt {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .mktTxt a.icon {
@@ -1325,13 +1448,28 @@ small {
 }
 .mktTxt a.icon p {
   color: #20b6b5;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
   margin: 5px 0;
 }
 .mktTxt a.icon:hover i {
   background: #2dfffe;
   color: #272a32;
+}
+.mktTxt a.icon.small {
+  text-align: center;
+  width: auto;
+}
+.mktTxt a.icon.small i {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  font-size: 1.2em;
+  padding-top: 6px;
+}
+.mktTxt a.icon.small p {
+  display: inline-block;
+  font-size: 0.9em;
 }
 .mktTxt h3 {
   margin: 20px 0;
@@ -1356,14 +1494,29 @@ small {
 .mktTxt ul {
   font-size: 0.9em;
   margin: 5px;
-  list-style-type: square;
-  list-style-position: inside;
+  list-style-type: none;
   text-align: left;
 }
 .mktTxt ul li {
-  margin: 5px;
+  margin: 10px 5px;
+  border-left: 2px solid #272a32;
+  padding: 5px 5px 5px 10px;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.mktTxt ul li:hover {
+  padding-left: 20px;
+  border-left: 6px solid #2dfffe;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
 }
 .mktTxt .empieza {
   margin-top: 40px;
   margin-bottom: 20px;
+  font-size: 1.2em;
+  padding: 10px 40px;
 }

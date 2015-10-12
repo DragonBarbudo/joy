@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>JOY Comunicación</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Somos una Agencia con enfoque en la Tecnología, el Marketing y la Comunicación efectiva.">
+    <meta name="keywords" content="Tecnología, Marketing, Comunicación, diseño, branding, camapañas de publicidad, pr y patrocinios">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Muli:300,400">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo:300,400">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.1/css/swipebox.min.css">
@@ -17,13 +17,72 @@
   <body>
     <div class="auxmenu"><a href="#" data-sr="enter left roll -45deg" class="menu">
         <div data="site/img/icon_menu.svg" class="svg"></div>
-        <div class="txt">Menú</div></a><a href="#" data-sr="enter left roll -45deg wait 0.1s" class="photo">
-        <div data="site/img/icon_photo.svg" class="svg"></div>
-        <div class="txt">Fotos</div></a><a href="#" data-sr="enter left roll -45deg wait 0.2s" class="gallery">
-        <div data="site/img/icon_gallery.svg" class="svg"></div>
-        <div class="txt">Galería</div></a><a href="#" data-sr="enter left roll -45deg wait 0.3s" class="share">
+        <div class="txt">Menú</div></a>
+      <!--a(href="#", data-sr="enter left roll -45deg wait 0.1s").photo
+      .svg(data="site/img/icon_photo.svg")
+      div.txt Fotos
+      -->
+      <!--a(href="#", data-sr="enter left roll -45deg wait 0.2s").gallery
+      .svg(data="site/img/icon_gallery.svg")
+      div.txt Galería
+      --><a href="#" data-sr="enter left roll -45deg wait 0.3s" class="share">
         <div data="site/img/icon_share.svg" class="svg"></div>
-        <div class="txt">Comparte</div></a></div>
+        <div class="txt">Comparte</div></a>
+    </div>
+    <div class="showmenu">
+      <div class="close"><i class="fa fa-times"></i></div>
+      <div class="container">
+        <div class="col4 push1 logo">
+          <div data="site/img/joy.svg" class="svg joy w100"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col12">
+          <nav class="fullNav">
+            <ul class="listMain horizontal">
+              <li class="col2"><a href="about-joy.html">About Joy</a>
+              </li>
+              <li class="col2"><a href="events.html">Events</a>
+              </li>
+              <li class="col2"><a href="gadgets.html">Gadgets</a>
+              </li>
+              <li class="col2"><a href="studio-mkt.html">Studio Marketing</a>
+                <ul class="listSub">
+                  <li><a href="mkt-digital.html.html">MKT digital y Web UX</a>
+                  </li>
+                  <li><a href="mkt-diseno-html.html">Diseño</a>
+                  </li>
+                  <li><a href="mkt-branding.html.html">Branding e Identidad</a>
+                  </li>
+                  <li><a href="mkt-pr.html.html">PR y Patrocinios</a>
+                  </li>
+                  <li><a href="mkt-publicidad.html.html">Campañas de publicidad</a>
+                  </li>
+                  <li><a href="mkt-estrategia.html.html">Estrategia y consultoría</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="col2"><a href="clients.html">Clients</a>
+              </li>
+              <li class="col2"><a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="showshare">
+      <div class="close"><i class="fa fa-times"></i></div>
+      <div class="container">
+        <div class="col4 push4 logo">
+          <div data="site/img/joy.svg" class="svg joy w100"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col2 push4"><a href="#" target="_blank" class="shareFB"><i class="fa fa-facebook"></i></a></div>
+        <div class="col2"><a href="#" target="_blank" class="shareTW"><i class="fa fa-twitter"></i></a></div>
+      </div>
+    </div>
     <div class="container">
       <div data-sr class="col2 logo"><a href="index.html">
           <div data="site/img/joy.svg" class="svg joy w100"></div></a></div>
@@ -39,6 +98,20 @@
             <li class="col2"><a href="gadgets.html">Gadgets</a>
             </li>
             <li class="col2"><a href="studio-mkt.html">Studio Marketing</a>
+              <ul class="listSub">
+                <li><a href="mkt-digital.html.html">MKT digital y Web UX</a>
+                </li>
+                <li><a href="mkt-diseno-html.html">Diseño</a>
+                </li>
+                <li><a href="mkt-branding.html.html">Branding e Identidad</a>
+                </li>
+                <li><a href="mkt-pr.html.html">PR y Patrocinios</a>
+                </li>
+                <li><a href="mkt-publicidad.html.html">Campañas de publicidad</a>
+                </li>
+                <li><a href="mkt-estrategia.html.html">Estrategia y consultoría</a>
+                </li>
+              </ul>
             </li>
             <li class="col2"><a href="clients.html">Clients</a>
             </li>
@@ -92,11 +165,14 @@
         <div class="col3"><a href="#">
             <div class="fa fa-lock"></div>
             <p>Aviso de privacidad</p></a></div>
+        <div class="col2 socials"><a href="#">
+            <div class="fa fa-facebook"></div></a><a href="#">
+            <div class="fa fa-youtube"></div></a></div>
       </div>
     </footer>
     <div id="footerEnd">
       <div class="container">
-        <div class="col10">
+        <div class="col12">
           <nav>
             <ul class="listMain horizontal">
               <li class="col2"><a href="about-joy.html">About Joy</a>
@@ -106,17 +182,30 @@
               <li class="col2"><a href="gadgets.html">Gadgets</a>
               </li>
               <li class="col2"><a href="studio-mkt.html">Studio Marketing</a>
+                <ul class="listSub">
+                  <li><a href="mkt-digital.html.html">MKT digital y Web UX</a>
+                  </li>
+                  <li><a href="mkt-diseno-html.html">Diseño</a>
+                  </li>
+                  <li><a href="mkt-branding.html.html">Branding e Identidad</a>
+                  </li>
+                  <li><a href="mkt-pr.html.html">PR y Patrocinios</a>
+                  </li>
+                  <li><a href="mkt-publicidad.html.html">Campañas de publicidad</a>
+                  </li>
+                  <li><a href="mkt-estrategia.html.html">Estrategia y consultoría</a>
+                  </li>
+                </ul>
               </li>
               <li class="col2"><a href="clients.html">Clients</a>
               </li>
               <li class="col2"><a href="contact.html">Contact</a>
               </li>
+              <li class="col2"><a href="sitio.html">Sitio</a>
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="col2 socials"><a href="#">
-            <div class="fa fa-facebook"></div></a><a href="#">
-            <div class="fa fa-youtube"></div></a></div>
       </div>
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.core.min.js"></script>

@@ -98,6 +98,24 @@ $(function(){
 
 
 
+  $('.menu').click(function(){
+    $('.showmenu').animate({top:0}, 300);
+    $('.showmenu .close').click(function(){
+      $('.showmenu').animate({top:'-200%'}, 300);
+    });
+  });
+
+  $('.share').click(function(){
+    $('.showshare').animate({top:0}, 300);
+    var thisURL = window.location.href;
+    $('.shareFB').attr('href', 'https://www.facebook.com/sharer/sharer.php?u='+thisURL);
+    $('.shareTW').attr('href', 'https://twitter.com/home?status='+thisURL);
+    $('.showshare .close').click(function(){
+      $('.showshare').animate({top:'-200%'}, 300);
+    });
+  });
+
+
 
 
 }); // JQUERY END

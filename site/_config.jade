@@ -4,13 +4,13 @@ include ../dw/dw.jade
 
 //- METAS
 - var title = "JOY Comunicación"
-- var keywords = ""
-- var description = ""
+- var keywords = "Tecnología, Marketing, Comunicación, diseño, branding, camapañas de publicidad, pr y patrocinios"
+- var description = "Somos una Agencia con enfoque en la Tecnología, el Marketing y la Comunicación efectiva."
 
 //- STYLESHEETS
 - var stylesheets = []
 - stylesheets.push('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
-- stylesheets.push('http://fonts.googleapis.com/css?family=Lato:300,400,700')
+- stylesheets.push('http://fonts.googleapis.com/css?family=Muli:300,400')
 - stylesheets.push('https://fonts.googleapis.com/css?family=Exo:300,400')
 - stylesheets.push('http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css')
 - stylesheets.push('https://cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.1/css/swipebox.min.css')
@@ -29,11 +29,22 @@ include ../dw/dw.jade
 - javascripts.push('site/js/script.js') //Main Js
 
 //- MENU
+- var menuStudio = []
+- menuStudio.push(['MKT digital y Web UX', 'mkt-digital.html']);
+- menuStudio.push(['Diseño', 'mkt-diseno-html']);
+- menuStudio.push(['Branding e Identidad', 'mkt-branding.html']);
+- menuStudio.push(['PR y Patrocinios', 'mkt-pr.html']);
+- menuStudio.push(['Campañas de publicidad', 'mkt-publicidad.html']);
+- menuStudio.push(['Estrategia y consultoría', 'mkt-estrategia.html']);
+
+
+
+
 - var menu = [] //- menu.push('PageName', 'Slug')
 - menu.push(['About Joy', 'about-joy'])
 - menu.push(['Events', 'events'])
 - menu.push(['Gadgets', 'gadgets'])
-- menu.push(['Studio Marketing', 'studio-mkt'])
+- menu.push(['Studio Marketing', 'studio-mkt', menuStudio])
 - menu.push(['Clients', 'clients'])
 - menu.push(['Contact', 'contact'])
 
@@ -48,16 +59,31 @@ mixin auxmenu
     a(href="#", data-sr="enter left roll -45deg").menu
       .svg(data="site/img/icon_menu.svg")
       div.txt Menú
-    a(href="#", data-sr="enter left roll -45deg wait 0.1s").photo
+    //a(href="#", data-sr="enter left roll -45deg wait 0.1s").photo
       .svg(data="site/img/icon_photo.svg")
       div.txt Fotos
-    a(href="#", data-sr="enter left roll -45deg wait 0.2s").gallery
+    //a(href="#", data-sr="enter left roll -45deg wait 0.2s").gallery
       .svg(data="site/img/icon_gallery.svg")
       div.txt Galería
     a(href="#", data-sr="enter left roll -45deg wait 0.3s").share
       .svg(data="site/img/icon_share.svg")
       div.txt Comparte
-    
+  .showmenu
+    .close: i.fa.fa-times
+    .container
+      .col4.push1.logo: .svg(data="site/img/joy.svg").joy.w100
+    .container
+      .col12
+        nav.fullNav: +menu('index', menu, 'horizontal')
+  .showshare
+    .close: i.fa.fa-times
+    .container
+      .col4.push4.logo: .svg(data="site/img/joy.svg").joy.w100
+    .container
+      .col2.push4
+        a(href="#", target="_blank").shareFB: i.fa.fa-facebook
+      .col2
+        a(href="#", target="_blank").shareTW: i.fa.fa-twitter
     
 mixin footer
   footer
@@ -78,10 +104,50 @@ mixin footer
         a(href="#")
           div.fa.fa-lock
           p Aviso de privacidad
-  #footerEnd
-    .container
-      .col10
-        nav: +menu('index', menu, 'horizontal')
       .col2.socials
         a(href="#"): .fa.fa-facebook
         a(href="#"): .fa.fa-youtube
+        
+  #footerEnd
+    .container
+      .col12
+        nav
+          - var ftmenu = menu
+          - ftmenu.push(['Sitio', 'sitio'])
+          +menu('index', ftmenu, 'horizontal')
+          
+
+mixin returnmkt
+  .container.mktTxt
+    .col4.p1
+      a(href="mkt-digital.html").icon.small
+        i.fa.fa-chevron-left
+        p Marketing digital
+
+mixin mktnav
+  .container.mktTxt
+    .col3: a(href="mkt-web-ux.html", data-sr="wait 0s").icon
+        i.fa.fa-laptop
+        p Web UX
+    .col3: a(href="mkt-mobile.html", data-sr="wait .2s").icon
+        i.fa.fa-mobile
+        p Mobile
+    .col3: a(href="mkt-seo.html", data-sr="wait .4s").icon
+        i.fa.fa-cogs
+        p SEO
+    .col3: a(href="mkt-social.html", data-sr="wait .6s").icon
+        i.fa.fa-comment
+        p Social
+  .container.mktTxt
+    .col3: a(href="mkt-search.html", data-sr="wait .8s").icon
+        i.fa.fa-search
+        p Search
+    .col3: a(href="mkt-media.html", data-sr="wait .10s").icon
+        i.fa.fa-film
+        p Media
+    .col3: a(href="mkt-analytics.html", data-sr="wait .12s").icon
+        i.fa.fa-bar-chart
+        p Marketing Analytics
+    .col3: a(href="mkt-creative.html", data-sr="wait .14s").icon
+        i.fa.fa-lightbulb-o
+        p Creative Content
