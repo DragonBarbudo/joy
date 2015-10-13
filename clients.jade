@@ -1,0 +1,47 @@
+//-output: index.html, pretty:false
+
+include site/_config.jade
+
++html5
+  +head(title, stylesheets, keywords, description)
+  body
+    +auxmenu
+    .container
+      .col2(data-sr).logo
+        a(href="index.html"): .svg(data="site/img/joy.svg").joy.w100
+    .menuHidden
+      .container
+        nav.mainNav: +menu('index', menu, 'horizontal')
+    
+    .container.centralContent
+      .col5
+        h2(data-sr="enter left").low Clientes y amigos
+      .col7
+        .mainImage
+        +sliderbg('.mainImage', 'site/img/clientes.jpg')
+    
+    .container.mktTxt
+      .col10.push1
+        h3 Gracias a nuestros clientes por su entera confianza
+        p(data-sr) Nuestra mayor satisfacción es el escuchar directamente de los clientes cómo se benefician sus productos, marcas y el negocio con nuestro compromiso de creatividad, vanguarida y excelete servicio.
+        
+    .container.mktTxt
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      .col3.cl: .client
+      
+    .container.mktTxt    
+      a(href="contacto.html").btn.empieza Ahora es tu turno
+        
+    +footer
+            
+    +scripts

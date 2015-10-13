@@ -365,8 +365,7 @@ footer{
   color:@w;
   .fontA;
   text-align: center;
-
-  p{ padding: 10px 0;}
+  p{ padding: 10px 0; font-size: 0.8em;}
   a{
     color:@w;
     text-decoration: none;
@@ -545,5 +544,113 @@ small{
     margin-bottom: 20px;
     font-size: 1.2em;
     padding: 10px 40px;
+  }
+  .cl{
+    text-align: center;
+    .client{
+      display: block;
+      text-decoration: none;
+      width: 100px;
+      height: 100px;
+      background: @w*1.1;
+      .border-radius(50%);
+      .box-sizing(border-box);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 20px auto;
+    }
+    &:nth-child(1) .client{ background-image: url(../img/cl_hsbc.jpg); };
+    &:nth-child(2) .client{ background-image: url(../img/cl_coca.jpg); };
+    &:nth-child(3) .client{ background-image: url(../img/cl_moto.jpg); };
+    &:nth-child(4) .client{ background-image: url(../img/cl_google.jpg); };
+    &:nth-child(5) .client{ background-image: url(../img/cl_jose.jpg); };
+    &:nth-child(6) .client{ background-image: url(../img/cl_gatorade.jpg); };
+    &:nth-child(7) .client{ background-image: url(../img/cl_samsung.jpg); };
+    &:nth-child(8) .client{ background-image: url(../img/cl_corona.jpg); };
+    &:nth-child(9) .client{ background-image: url(../img/cl_mexico.jpg); };
+    &:nth-child(10) .client{ background-image: url(../img/cl_cruz.jpg); };
+    &:nth-child(11) .client{ background-image: url(../img/cl_mvs.jpg); };
+    &:nth-child(12) .client{ background-image: url(../img/cl_m.jpg); };
+
+  }
+}
+
+
+
+.contact{
+  padding: 40px 0;
+  min-height: 520px;
+  #map{
+    position: absolute;
+  }
+  #form{
+    position: relative;
+    z-index: 1;
+    background: fade(@main/1.2, 80%);
+    height: 520px;
+    h2{
+      font-size: 2em;
+      color:@w*1.5;
+      font-weight: 300;
+      margin-top: 20px;
+    }
+    form{
+      margin: 10px 0;
+    }
+    label{
+      color:@main/2;
+      margin-top: 5px;
+      font-size: 0.8em;
+    }
+    input, textarea{
+      border:none;
+      background: @w;
+      padding: 8px;
+      .font;
+      font-size: 0.9em;
+    }
+    textarea{
+      height: 120px;
+    }
+    button{
+      width: 100%;
+      background: @b;
+      margin-top: 10px;
+      &:hover{
+        background: @w;
+        color:@b;
+      }
+    }
+    .resultado{
+      color:@w;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .select{
+      width: 100%;
+      background: @w;
+      padding: 8px;
+      overflow: hidden;
+      .box-sizing(border-box);
+      select{
+        width: 120%;
+        background: transparent;
+        border: none;
+        appearance: none;
+        font-size: 0.9em;
+      }
+    }
+    &:before{
+      content:"";
+      position: absolute;
+      left: -100px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100px 520px 0;
+      border-color: transparent fade(@main/1.2, 80%) transparent transparent;
+    }
   }
 }
