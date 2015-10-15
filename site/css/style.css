@@ -884,6 +884,11 @@ body {
 .index .logo {
   margin-top: 14%;
 }
+@media only screen and (max-width: 600px) {
+  .index .logo {
+    margin-top: 20%;
+  }
+}
 .logo {
   margin-top: 10px;
 }
@@ -902,6 +907,50 @@ body {
 .fullNav ul li {
   position: relative;
   text-align: center;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .mainNav ul li,
+  .fullNav ul li {
+    display: block;
+    float: left;
+    width: 31.25132%;
+    margin: 0 1.041%;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .mainNav ul li,
+  .fullNav ul li {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  .mainNav ul li,
+  .fullNav ul li {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mainNav ul li,
+  .fullNav ul li {
+    display: block;
+    float: left;
+    width: 47.91798%;
+    margin: 0 1.041%;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .mainNav ul li,
+  .fullNav ul li {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  .mainNav ul li,
+  .fullNav ul li {
+    width: 97.91796%;
+  }
 }
 .mainNav ul li a,
 .fullNav ul li a {
@@ -951,6 +1000,12 @@ body {
 .fullNav ul li ul.listSub {
   position: absolute;
   bottom: 120px;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px), only screen and (max-width: 600px) {
+  .mainNav ul li ul.listSub,
+  .fullNav ul li ul.listSub {
+    display: none;
+  }
 }
 .mainNav ul li ul.listSub li,
 .fullNav ul li ul.listSub li {
@@ -1291,9 +1346,58 @@ footer .col3 {
     width: 97.91796%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  footer .col3 {
+    display: block !important;
+    float: left !important;
+    width: 47.91798% !important;
+    margin: 0 1.041% !important;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  footer .col3 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  footer .col3 {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer .col3 {
+    display: block !important;
+    float: left !important;
+    width: 97.91796% !important;
+    margin: 0 1.041% !important;
+  }
+  footer .col3 div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  footer .col3 p {
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  footer .col3 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  footer .col3 {
+    width: 97.91796%;
+  }
+}
 footer .col3 .fa {
   font-size: 3em;
   padding: 10px 0;
+}
+@media only screen and (max-width: 600px) {
+  footer .col3 .fa {
+    font-size: 2em;
+  }
 }
 footer .socials {
   text-align: center;
@@ -1317,6 +1421,12 @@ footer .socials a {
 }
 footer .socials a:hover {
   background: #2dfffe;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px), only screen and (max-width: 600px) {
+  footer .socials a {
+    display: inline-block;
+    margin: 20px;
+  }
 }
 #footerEnd {
   background: #666668;
@@ -1348,6 +1458,44 @@ footer .socials a:hover {
     width: 97.91796%;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  #footerEnd nav ul li {
+    display: block !important;
+    float: left !important;
+    width: 22.91799% !important;
+    margin: 0 1.041% !important;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  #footerEnd nav ul li {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  #footerEnd nav ul li {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #footerEnd nav ul li {
+    display: block !important;
+    float: left !important;
+    width: 97.91796% !important;
+    margin: 0 1.041% !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  #footerEnd nav ul li {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  #footerEnd nav ul li {
+    width: 97.91796%;
+  }
+}
 #footerEnd nav ul li .listSub {
   display: none;
 }
@@ -1361,6 +1509,12 @@ footer .socials a:hover {
 }
 .studio a#mkt-web {
   height: 408px;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px), only screen and (max-width: 600px) {
+  .studio a#mkt-web {
+    height: 204px;
+    margin-bottom: 10px;
+  }
 }
 .studio a#mkt-diseno,
 .studio a#mkt-branding,
@@ -1383,6 +1537,17 @@ footer .socials a:hover {
   right: 10px;
   bottom: 10px;
 }
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .studio a span {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .studio a span {
+    width: 90%;
+    font-size: 1.1em;
+  }
+}
 .studio a img {
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -1398,6 +1563,11 @@ footer .socials a:hover {
 .studio a:hover span {
   width: 90%;
   font-size: 2em;
+}
+@media only screen and (max-width: 600px) {
+  .studio a:hover span {
+    font-size: 1.4em;
+  }
 }
 .studio a:hover .backstretch {
   background: #272a32;
@@ -1421,6 +1591,12 @@ small {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .mktTxt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 .mktTxt a.icon {
   display: block;
@@ -1588,11 +1764,21 @@ small {
 .contact #map {
   position: absolute;
 }
+@media only screen and (max-width: 600px) {
+  .contact #map {
+    position: static;
+  }
+}
 .contact #form {
   position: relative;
   z-index: 1;
   background: rgba(38, 213, 212, 0.8);
   height: 520px;
+}
+@media only screen and (max-width: 600px) {
+  .contact #form {
+    height: auto;
+  }
 }
 .contact #form h2 {
   font-size: 2em;
@@ -1600,13 +1786,33 @@ small {
   font-weight: 300;
   margin-top: 20px;
 }
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .contact #form h2 {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact #form h2 {
+    font-size: 1.8em;
+  }
+}
 .contact #form form {
   margin: 10px 0;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .contact #form p {
+    font-size: 0.9em;
+  }
 }
 .contact #form label {
   color: #17807f;
   margin-top: 5px;
   font-size: 0.8em;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .contact #form label {
+    margin-top: 10px;
+  }
 }
 .contact #form input,
 .contact #form textarea {
@@ -1615,6 +1821,13 @@ small {
   padding: 8px;
   font-family: 'Muli', sans-serif;
   font-size: 0.9em;
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .contact #form input,
+  .contact #form textarea {
+    padding: 6px;
+    font-size: 0.8em;
+  }
 }
 .contact #form textarea {
   height: 120px;
@@ -1660,4 +1873,146 @@ small {
   border-style: solid;
   border-width: 0 100px 520px 0;
   border-color: transparent rgba(38, 213, 212, 0.8) transparent transparent;
+}
+@media only screen and (max-width: 600px) {
+  .contact #form:before {
+    display: none;
+  }
+}
+/* responsive */
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .logo {
+    display: block;
+    float: left;
+    width: 31.25132%;
+    margin: 0 1.041%;
+    margin-top: 10px;
+  }
+  .centralContent .col5 {
+    display: block;
+    float: left;
+    width: 97.91796%;
+    margin: 0 1.041%;
+  }
+  .centralContent .col7 {
+    display: block;
+    float: left;
+    width: 97.91796%;
+    margin: 0 1.041%;
+  }
+  .secondContent .col5 {
+    display: block;
+    float: left;
+    width: 47.91798%;
+    margin: 0 1.041%;
+    margin-left: 1.041%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .logo {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  .logo {
+    width: 97.91796%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .centralContent .col5 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  .centralContent .col5 {
+    width: 97.91796%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .centralContent .col7 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  .centralContent .col7 {
+    width: 97.91796%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .secondContent .col5 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) and only screen and (max-width: 600px) {
+  .secondContent .col5 {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: block;
+    float: left;
+    width: 47.91798%;
+    margin: 0 1.041%;
+    margin-top: 10px;
+  }
+  .centralContent .col5 {
+    display: block;
+    float: left;
+    width: 97.91796%;
+    margin: 0 1.041%;
+  }
+  .centralContent .col7 {
+    display: block;
+    float: left;
+    width: 97.91796%;
+    margin: 0 1.041%;
+  }
+  .secondContent .col5 {
+    display: block;
+    float: left;
+    width: 97.91796%;
+    margin: 0 1.041%;
+    margin-left: 1.041%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .logo {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  .logo {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .centralContent .col5 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  .centralContent .col5 {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .centralContent .col7 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  .centralContent .col7 {
+    width: 97.91796%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (min-width: 601px) and (max-width: 1199px) {
+  .secondContent .col5 {
+    width: 47.91798%;
+  }
+}
+@media only screen and (max-width: 600px) and only screen and (max-width: 600px) {
+  .secondContent .col5 {
+    width: 97.91796%;
+  }
 }

@@ -22,6 +22,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/clients.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/clients.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/clients.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -384,6 +393,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/mkt-media.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-media.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/mkt-media.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -394,6 +412,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/mkt-mobile.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-mobile.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/mkt-mobile.jade": {
 		"compileDebug": 1,
@@ -406,6 +433,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/mkt-pr.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-pr.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/mkt-pr.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -416,6 +452,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/mkt-publicidad.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-publicidad.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/mkt-publicidad.jade": {
 		"compileDebug": 1,
@@ -428,6 +473,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/mkt-search.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-search.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/mkt-search.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -438,6 +492,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/mkt-seo.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-seo.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/mkt-seo.jade": {
 		"compileDebug": 1,
@@ -450,6 +513,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/mkt-social.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-social.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/mkt-social.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -460,6 +532,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/mkt-web-ux.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mkt-web-ux.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/mkt-web-ux.jade": {
 		"compileDebug": 1,

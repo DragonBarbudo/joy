@@ -80,9 +80,9 @@ mixin auxmenu
     .container
       .col4.push4.logo: .svg(data="site/img/joy.svg").joy.w100
     .container
-      .col2.push4
+      .col2.push4.col-t6.push-t0.col-m6.push-m0
         a(href="#", target="_blank").shareFB: i.fa.fa-facebook
-      .col2
+      .col2.col-t6.col-m6
         a(href="#", target="_blank").shareTW: i.fa.fa-twitter
     
 mixin footer
@@ -104,7 +104,7 @@ mixin footer
         a(href="#")
           div.fa.fa-lock
           p Aviso de privacidad
-      .col2.socials
+      .col2.col-t6.push-t3.col-m6.push-m3.socials
         a(href="#"): .fa.fa-facebook
         a(href="#"): .fa.fa-youtube
         
@@ -119,36 +119,36 @@ mixin footer
 
 mixin returnmkt
   .container.mktTxt
-    .col4.p1
+    .col4.push1.col-m6.push-m0
       a(href="mkt-digital.html").icon.small
         i.fa.fa-chevron-left
         p Marketing digital
 
 mixin mktnav
   .container.mktTxt
-    .col3: a(href="mkt-web-ux.html", data-sr="wait 0s").icon
+    .col3.col-m6: a(href="mkt-web-ux.html", data-sr="wait 0s").icon
         i.fa.fa-laptop
         p Web UX
-    .col3: a(href="mkt-mobile.html", data-sr="wait .2s").icon
+    .col3.col-m6: a(href="mkt-mobile.html", data-sr="wait .2s").icon
         i.fa.fa-mobile
         p Mobile
-    .col3: a(href="mkt-seo.html", data-sr="wait .4s").icon
+    .col3.col-m6: a(href="mkt-seo.html", data-sr="wait .4s").icon
         i.fa.fa-cogs
         p SEO
-    .col3: a(href="mkt-social.html", data-sr="wait .6s").icon
+    .col3.col-m6: a(href="mkt-social.html", data-sr="wait .6s").icon
         i.fa.fa-comment
         p Social
   .container.mktTxt
-    .col3: a(href="mkt-search.html", data-sr="wait .8s").icon
+    .col3.col-m6: a(href="mkt-search.html", data-sr="wait .8s").icon
         i.fa.fa-search
         p Search
-    .col3: a(href="mkt-media.html", data-sr="wait .10s").icon
+    .col3.col-m6: a(href="mkt-media.html", data-sr="wait .10s").icon
         i.fa.fa-film
         p Media
-    .col3: a(href="mkt-analytics.html", data-sr="wait .12s").icon
+    .col3.col-m6: a(href="mkt-analytics.html", data-sr="wait .12s").icon
         i.fa.fa-bar-chart
         p Marketing Analytics
-    .col3: a(href="mkt-creative.html", data-sr="wait .14s").icon
+    .col3.col-m6: a(href="mkt-creative.html", data-sr="wait .14s").icon
         i.fa.fa-lightbulb-o
         p Creative Content
 

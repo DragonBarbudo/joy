@@ -26,18 +26,9 @@ include site/_config.jade
         p(data-sr) Nuestra mayor satisfacción es el escuchar directamente de los clientes cómo se benefician sus productos, marcas y el negocio con nuestro compromiso de creatividad, vanguarida y excelete servicio.
         
     .container.mktTxt
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
-      .col3.cl: .client
+      - for(var i =0; i<12; i++)
+        .col3.col-m6.cl: .client
+      
       
     .container.mktTxt    
       a(href="contact.html").btn.empieza Ahora es tu turno

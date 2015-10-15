@@ -58,13 +58,14 @@ body{
   .joy{*{fill:@w;}}
   .logo{
     margin-top: 14%;
-
+    @media @mobile{ margin-top: 20%;   }
   }
 }
 
 .logo{
   svg{width: 100%; height:auto;}
   margin-top: 10px;
+
 }
 
 .joy{*{fill:@b;}}
@@ -75,6 +76,8 @@ body{
     li{
       position: relative;
       text-align: center;
+      @media @tablet{ .col(12/3); margin-top: 40px;}
+      @media @mobile{ .col(12/2); margin-top: 20px;}
       a{
         display: block;
         width: 120px;
@@ -105,6 +108,7 @@ body{
       ul.listSub{
         position: absolute;
         bottom: 120px;
+        @media @tablet, @mobile{ display: none; }
         li{
           width: 100%;
           a{
@@ -373,10 +377,17 @@ footer{
   }
   .col3{
     .col(2.5) !important;
+    @media @tablet{ .col(6) !important; }
+    @media @mobile{ .col(12) !important;
+      div {display: inline-block; vertical-align: middle; margin-right: 10px;}
+      p{ display: inline-block; }
+    }
     .fa{
       font-size: 3em;
       padding: 10px 0;
+      @media @mobile{ font-size: 2em; }
     }
+
   }
   .socials{
     text-align: center;
@@ -392,6 +403,10 @@ footer{
       margin: 10px 0;
       &:hover{
         background: @main;
+      }
+      @media @tablet, @mobile{
+        display: inline-block;
+        margin: 20px;
       }
     }
   }
@@ -411,6 +426,9 @@ footer{
     ul{
       li{
         .col(12/7) !important;
+        @media @tablet{ .col(12/4) !important; }
+        @media @mobile{ .col(12/1) !important; margin-top: 10px !important; margin-bottom: 10px !important; }
+
         .listSub{
           display: none;
         }
@@ -427,7 +445,7 @@ footer{
     display: block;
     text-decoration: none;
     position: relative;
-    &#mkt-web{ height: 408px;}
+    &#mkt-web{ height: 408px; @media @tablet, @mobile{ height: 204px; margin-bottom: 10px;}}
     &#mkt-diseno, &#mkt-branding, &#mkt-pr{ height: 200px;}
     &#mkt-publicidad, &#mkt-estrategia{ height: 200px; margin-top: 8px;}
     span{
@@ -440,13 +458,15 @@ footer{
       position: absolute;
       right: 10px;
       bottom: 10px;
+      @media @tablet{ width: 90%; }
+      @media @mobile{ width: 90%; font-size: 1.1em;}
     }
     img{.opacity(1);.transition(500ms);}
     &:hover{
       span{
         width: 90%;
         font-size: 2em;
-
+        @media @mobile{ font-size: 1.4em; }
       }
       .backstretch{background: @b;}
       img{.opacity(0.4); .transition(300ms);}
@@ -462,6 +482,7 @@ small{
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  @media @mobile{ margin-top: 20px; margin-bottom: 20px;}
   a.icon{
     display: block;
     text-decoration: none;
@@ -583,25 +604,35 @@ small{
   min-height: 520px;
   #map{
     position: absolute;
+    @media @mobile{ position: static; }
   }
   #form{
     position: relative;
     z-index: 1;
     background: fade(@main/1.2, 80%);
     height: 520px;
+    @media @mobile{ height: auto;}
     h2{
       font-size: 2em;
       color:@w*1.5;
       font-weight: 300;
       margin-top: 20px;
+      @media @tablet{ font-size: 1.4em; }
+      @media @mobile{ font-size: 1.8em; }
     }
     form{
       margin: 10px 0;
+    }
+    p{
+      @media @tablet{ font-size: 0.9em; }
     }
     label{
       color:@main/2;
       margin-top: 5px;
       font-size: 0.8em;
+      @media @tablet{
+        margin-top: 10px;
+      }
     }
     input, textarea{
       border:none;
@@ -609,6 +640,7 @@ small{
       padding: 8px;
       .font;
       font-size: 0.9em;
+      @media @tablet{ padding: 6px; font-size: 0.8em;}
     }
     textarea{
       height: 120px;
@@ -651,6 +683,33 @@ small{
       border-style: solid;
       border-width: 0 100px 520px 0;
       border-color: transparent fade(@main/1.2, 80%) transparent transparent;
+      @media @mobile{display: none;}
     }
+  }
+}
+
+
+
+
+/* responsive */
+@media @tablet{
+  .logo{ .col(4); margin-top: 10px; }
+  .centralContent{
+    .col5{ .col(12); }
+    .col7{ .col(12); }
+  }
+  .secondContent{
+    .col5{ .col(6); .push(0); }
+  }
+}
+
+@media @mobile{
+  .logo{ .col(6); margin-top: 10px; }
+  .centralContent{
+    .col5{ .col(12); }
+    .col7{ .col(12); }
+  }
+  .secondContent{
+    .col5{ .col(12); .push(0); }
   }
 }
